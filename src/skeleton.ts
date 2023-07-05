@@ -37,12 +37,7 @@ arr.reduce((sum, num) => sum + num, 0)
 
 function betterThanAverage(arr: number[], point: number): boolean{
   let sumClassPoints = arr.reduce((sum, num) => sum + num, 0)
-  let avPoint = 0
-  avPoint = (sumClassPoints + point) / (arr.length + 1)
-  return (point > avPoint)   
+  return point > (sumClassPoints + point) / (arr.length + 1)  
 }
-
-console.log(betterThanAverage([2, 2, 2, 2], 2))
-console.log(betterThanAverage([1, 1, 1, 1], 70))
 
 export default betterThanAverage;

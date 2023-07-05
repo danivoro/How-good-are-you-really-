@@ -5,7 +5,7 @@ test("Codewars tests", () => {
 });
 
 
-test.skip("sum adds two numbers cancelling", () => {
+test("sum adds two numbers cancelling", () => {
   expect(betterThanAverage([12, 23, 34, 45, 56, 67, 78, 89, 90], 69)).toEqual(true);
 });
 
